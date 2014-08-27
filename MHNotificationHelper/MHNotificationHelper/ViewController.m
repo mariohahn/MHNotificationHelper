@@ -28,8 +28,7 @@
                                                                                          appName:@"meine App"];
     
     MHNotificationHelperViewController *notificationHelper = [MHNotificationHelperViewController.alloc initWithNotification:notificationObject];
-    notificationHelper.bannerLabel.text = NSLocalizedString(@"seaas", nil);
-    notificationHelper.numberFourDescriptionLabel.text = @"Yeah";
+    notificationHelper.bannerLabel.text = NSLocalizedString(@"Banner", nil);
     
     [self presentViewController:notificationHelper animated:YES completion:nil];
     
