@@ -51,7 +51,7 @@
         self.switchView.backgroundColor = UIColor.blackColor;
         self.switchView.layer.cornerRadius = 9;
         self.switchView.clipsToBounds = YES;
-
+        
         [self addSubview:self.switchView];
         
         [self.switchView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,19 +78,19 @@
     if (self) {
         
         self.view.backgroundColor = UIColor.blackColor;
-       
+        
         CGFloat paddingBetweenLabels = 28;
         CGFloat paddingBetweenViews = 10;
         CGFloat paddingImageView = 5;
-
         
         _exitButton = UIButton.new;
         [self.exitButton addTarget:self action:@selector(exitButtonAction) forControlEvents:UIControlEventTouchUpInside];
-        self.exitButton.backgroundColor = UIColor.whiteColor;
+        self.exitButton.tintColor = UIColor.lightGrayColor;
+        [self.exitButton setImage:[[UIImage imageNamed:@"MHExit"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
         [self.view addSubview:self.exitButton];
         
         [self.exitButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(self.view.mas_right).with.offset(-15);
+            make.right.mas_equalTo(self.view.mas_right).with.offset(-5);
             make.top.mas_equalTo(self.view.mas_top).with.offset(15);
             make.size.mas_equalTo(CGSizeMake(40, 40));
         }];
@@ -146,7 +146,7 @@
         }];
         
         _numberOneImageView = UIImageView.new;
-        self.numberOneImageView.image = [UIImage imageNamed:@""];
+        self.numberOneImageView.image = [[UIImage imageNamed:@"MHSettings"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         [self.view addSubview:self.numberOneImageView];
         
         [self.numberOneImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -213,7 +213,7 @@
         }];
         
         _numberThreeImageView = UIImageView.new;
-        self.numberThreeImageView.image = [UIImage imageNamed:@""];
+        self.numberThreeImageView.image = notification.appIcon;
         [self.view addSubview:self.numberThreeImageView];
         
         [self.numberThreeImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -338,7 +338,7 @@
         self.noneLabel.font = [UIFont boldSystemFontOfSize:15];
         self.noneLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.noneLabel];
-
+        
         _bannerLabel = UILabel.new;
         self.bannerLabel.backgroundColor = UIColor.whiteColor;
         self.bannerLabel.clipsToBounds = YES;
@@ -370,7 +370,7 @@
         }];
         
         [self.hinweisLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-                       make.left.mas_equalTo(self.bannerLabel.mas_right);
+            make.left.mas_equalTo(self.bannerLabel.mas_right);
             [self constraintsForLabelsInViewFive:make];
             make.right.mas_equalTo(self.numberFiveDescriptionView.mas_right);
             make.centerY.mas_equalTo(self.numberFiveDescriptionView.mas_centerY);
@@ -388,6 +388,7 @@
         imageView.backgroundColor = UIColor.whiteColor;
         imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeCenter;
+        imageView.tintColor = UIColor.blackColor;
     }
 }
 
