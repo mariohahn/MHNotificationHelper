@@ -21,7 +21,6 @@
 		F5F2FAEC19AE0151002A8FCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F2FACE19AE0151002A8FCC /* UIKit.framework */; };
 		F5F2FAF419AE0151002A8FCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FAF219AE0151002A8FCC /* InfoPlist.strings */; };
 		F5F2FAF619AE0151002A8FCC /* MHNotificationHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FAF519AE0151002A8FCC /* MHNotificationHelperTests.m */; };
-		F5F2FB0219AE0171002A8FCC /* MHNotificationHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB0119AE0171002A8FCC /* MHNotificationHelperViewController.m */; };
 		F5F2FB1B19AE01C2002A8FCC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB0519AE01C2002A8FCC /* MASCompositeConstraint.m */; };
 		F5F2FB1C19AE01C2002A8FCC /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB0719AE01C2002A8FCC /* MASConstraint.m */; };
 		F5F2FB1D19AE01C2002A8FCC /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB0A19AE01C2002A8FCC /* MASConstraintMaker.m */; };
@@ -31,6 +30,7 @@
 		F5F2FB2119AE01C2002A8FCC /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB1419AE01C2002A8FCC /* NSArray+MASAdditions.m */; };
 		F5F2FB2219AE01C2002A8FCC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB1719AE01C2002A8FCC /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F5F2FB2319AE01C2002A8FCC /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB1919AE01C2002A8FCC /* View+MASAdditions.m */; };
+		F5F2FB2619AE07BD002A8FCC /* MHNotificationHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2FB2519AE07BD002A8FCC /* MHNotificationHelperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 		F5F2FAF119AE0151002A8FCC /* MHNotificationHelperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MHNotificationHelperTests-Info.plist"; sourceTree = "<group>"; };
 		F5F2FAF319AE0151002A8FCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5F2FAF519AE0151002A8FCC /* MHNotificationHelperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHNotificationHelperTests.m; sourceTree = "<group>"; };
-		F5F2FB0019AE0171002A8FCC /* MHNotificationHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNotificationHelperViewController.h; sourceTree = "<group>"; };
-		F5F2FB0119AE0171002A8FCC /* MHNotificationHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNotificationHelperViewController.m; sourceTree = "<group>"; };
 		F5F2FB0419AE01C2002A8FCC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		F5F2FB0519AE01C2002A8FCC /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		F5F2FB0619AE01C2002A8FCC /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		F5F2FB1819AE01C2002A8FCC /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		F5F2FB1919AE01C2002A8FCC /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		F5F2FB1A19AE01C2002A8FCC /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		F5F2FB2419AE07BD002A8FCC /* MHNotificationHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MHNotificationHelperViewController.h; path = MHNotificationHelper/MHNotificationHelperViewController.h; sourceTree = "<group>"; };
+		F5F2FB2519AE07BD002A8FCC /* MHNotificationHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MHNotificationHelperViewController.m; path = MHNotificationHelper/MHNotificationHelperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,8 @@
 		F5F2FAFF19AE015A002A8FCC /* MHNotificationHelper */ = {
 			isa = PBXGroup;
 			children = (
-				F5F2FB0019AE0171002A8FCC /* MHNotificationHelperViewController.h */,
-				F5F2FB0119AE0171002A8FCC /* MHNotificationHelperViewController.m */,
+				F5F2FB2419AE07BD002A8FCC /* MHNotificationHelperViewController.h */,
+				F5F2FB2519AE07BD002A8FCC /* MHNotificationHelperViewController.m */,
 			);
 			name = MHNotificationHelper;
 			sourceTree = "<group>";
@@ -333,8 +333,8 @@
 				F5F2FB2119AE01C2002A8FCC /* NSArray+MASAdditions.m in Sources */,
 				F5F2FB2019AE01C2002A8FCC /* MASViewConstraint.m in Sources */,
 				F5F2FB1F19AE01C2002A8FCC /* MASViewAttribute.m in Sources */,
+				F5F2FB2619AE07BD002A8FCC /* MHNotificationHelperViewController.m in Sources */,
 				F5F2FB2319AE01C2002A8FCC /* View+MASAdditions.m in Sources */,
-				F5F2FB0219AE0171002A8FCC /* MHNotificationHelperViewController.m in Sources */,
 				F5F2FAD719AE0151002A8FCC /* main.m in Sources */,
 				F5F2FB1B19AE01C2002A8FCC /* MASCompositeConstraint.m in Sources */,
 				F5F2FB2219AE01C2002A8FCC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,

@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.dependency "Masonry"
 
-  s.resources = "MHNotificationHelper/MHNotificationHelper/**/*.{png}"
+  s.resources = "MHNotificationHelper/MHNotificationHelper/**/*.{png,bundle}"
 
   s.source_files = ['MHNotificationHelper/MHNotificationHelper/**/*.{h,m}']
   s.ios.deployment_target = '6.0'
