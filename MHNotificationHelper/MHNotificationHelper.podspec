@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MHNotificationHelper'
-  s.version      = '0.9.1'
+  s.version      = '0.9.2'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/mariohahn/MHNotificationHelper'
   s.author = {
@@ -10,14 +10,14 @@ Pod::Spec.new do |s|
   s.platform     =  :ios
   s.source = {
     :git => 'https://github.com/mariohahn/MHNotificationHelper.git',
-    :tag => 'v0.9.1'
+    :tag => 'v0.9.2'
   }
 
   s.dependency "Masonry"
 
-  s.resources = "MHNotificationHelper/MHNotificationHelper/**/*.{png,bundle}"
+  s.resources = "MHNotificationHelper/MHNotificationHelper/MHNotificationHelper/**/*.{png,bundle}"
 
-  s.source_files = ['MHNotificationHelper/MHNotificationHelper/**/*.{h,m}']
+  s.source_files = ['MHNotificationHelper/MHNotificationHelper/MHNotificationHelper/**/*.{h,m}']
   s.ios.deployment_target = '6.0'
   s.requires_arc = true
 end
