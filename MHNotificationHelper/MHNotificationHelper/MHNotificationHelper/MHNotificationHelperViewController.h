@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSBundle *MHNotificationBundle(void);
+extern void MHNotificationCustomLocalizationBlock(NSString *(^customLocalizationBlock)(NSString *stringToLocalize));
+extern NSString *MHNotificationLocalizedString(NSString *localizeString);
+
 @interface MHNotificationHelperObject : NSObject
 
 @property (nonatomic,strong) NSString *title;

@@ -37,6 +37,7 @@
 		F5F2FB3E19AE1D73002A8FCC /* MHSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB3A19AE1D73002A8FCC /* MHSettings@2x.png */; };
 		F5F2FB4119AE22DF002A8FCC /* MHVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB3F19AE22DF002A8FCC /* MHVideo@2x.png */; };
 		F5F2FB4219AE22DF002A8FCC /* MHVideo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4019AE22DF002A8FCC /* MHVideo.png */; };
+		F5F2FB4419AE23C0002A8FCC /* MHNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		F5F2FB3A19AE1D73002A8FCC /* MHSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MHSettings@2x.png"; path = "MHNotificationHelper/images/MHSettings@2x.png"; sourceTree = "<group>"; };
 		F5F2FB3F19AE22DF002A8FCC /* MHVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHVideo@2x.png"; sourceTree = "<group>"; };
 		F5F2FB4019AE22DF002A8FCC /* MHVideo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHVideo.png; sourceTree = "<group>"; };
+		F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MHNotification.bundle; path = MHNotificationHelper/MHNotification.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		F5F2FAFF19AE015A002A8FCC /* MHNotificationHelper */ = {
 			isa = PBXGroup;
 			children = (
+				F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */,
 				F5F2FB3719AE1D73002A8FCC /* MHExit.png */,
 				F5F2FB3819AE1D73002A8FCC /* MHExit@2x.png */,
 				F5F2FB3919AE1D73002A8FCC /* MHSettings.png */,
@@ -331,6 +334,7 @@
 				F5F2FAD519AE0151002A8FCC /* InfoPlist.strings in Resources */,
 				F5F2FADE19AE0151002A8FCC /* Main.storyboard in Resources */,
 				F5F2FB4119AE22DF002A8FCC /* MHVideo@2x.png in Resources */,
+				F5F2FB4419AE23C0002A8FCC /* MHNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

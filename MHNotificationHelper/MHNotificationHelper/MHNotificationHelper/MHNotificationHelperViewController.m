@@ -9,6 +9,33 @@
 #import "MHNotificationHelperViewController.h"
 #import "Masonry.h"
 
+#define kMHNotificationBundleName @"MHNotification.bundle"
+
+static NSString* (^ CustomLocalizationBlock)(NSString *localization) = nil;
+
+NSBundle *MHNotificationBundle(void) {
+    static NSBundle *bundle = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString* path = [NSBundle.mainBundle.resourcePath stringByAppendingPathComponent:kMHNotificationBundleName];
+        bundle = [NSBundle bundleWithPath:path];
+    });
+    return bundle;
+}
+
+void MHNotificationCustomLocalizationBlock(NSString *(^customLocalizationBlock)(NSString *stringToLocalize)){
+    CustomLocalizationBlock = customLocalizationBlock;
+}
+NSString *MHNotificationLocalizedString(NSString *localizeString) {
+    if (CustomLocalizationBlock) {
+        NSString *string = CustomLocalizationBlock(localizeString);
+        if (string) {
+            return string;
+        }
+    }
+    return  NSLocalizedStringFromTableInBundle(localizeString, @"MHNotification", MHNotificationBundle(), @"");
+}
+
 @implementation MHNotificationHelperObject
 
 - (instancetype)initWithTitle:(NSString*)title
@@ -125,7 +152,7 @@
         
         _doesItWorkLabel = UILabel.new;
         self.doesItWorkLabel.textColor = UIColor.whiteColor;
-        self.doesItWorkLabel.text = @"So funktioniert es:";
+        self.doesItWorkLabel.text = MHNotificationLocalizedString(@"notification.work");
         self.doesItWorkLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.doesItWorkLabel];
         
@@ -157,7 +184,7 @@
         
         _numberOneDescriptionLabel = UILabel.new;
         self.numberOneDescriptionLabel.textColor = UIColor.whiteColor;
-        self.numberOneDescriptionLabel.text = @"Öffne die iPhone-Einstellungen";
+        self.numberOneDescriptionLabel.text = MHNotificationLocalizedString(@"notification.open");
         self.numberOneDescriptionLabel.numberOfLines = 2;
         self.numberOneDescriptionLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.numberOneDescriptionLabel];
@@ -191,7 +218,7 @@
         
         _numberTwoDescriptionLabel = UILabel.new;
         self.numberTwoDescriptionLabel.textColor = UIColor.whiteColor;
-        self.numberTwoDescriptionLabel.text = @"Tippe auf \"Benachrichtigungszentrum\"";
+        self.numberTwoDescriptionLabel.text = MHNotificationLocalizedString(@"notification.notificationTap");
         self.numberTwoDescriptionLabel.numberOfLines = 2;
         self.numberTwoDescriptionLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.numberTwoDescriptionLabel];
@@ -224,7 +251,7 @@
         
         _numberThreeDescriptionLabel = UILabel.new;
         self.numberThreeDescriptionLabel.textColor = UIColor.whiteColor;
-        self.numberThreeDescriptionLabel.text = [NSString stringWithFormat:@"Wähle \"%@\"",notification.appName];
+        self.numberThreeDescriptionLabel.text = [NSString stringWithFormat:MHNotificationLocalizedString(@"notification.chooseBanner"),notification.appName];
         self.numberThreeDescriptionLabel.numberOfLines = 2;
         self.numberThreeDescriptionLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.numberThreeDescriptionLabel];
@@ -247,7 +274,7 @@
         
         _numberFourDescriptionLabel = UILabel.new;
         self.numberFourDescriptionLabel.textColor = UIColor.whiteColor;
-        self.numberFourDescriptionLabel.text = @"Anzeige auf dem Sperrbildschirm aktivieren";
+        self.numberFourDescriptionLabel.text = MHNotificationLocalizedString(@"notification.activate");
         self.numberFourDescriptionLabel.numberOfLines = 2;
         self.numberFourDescriptionLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.numberFourDescriptionLabel];
@@ -275,7 +302,7 @@
         _numberFourDescriptionLabelInDescriptionView = UILabel.new;
         self.numberFourDescriptionLabelInDescriptionView.font = [UIFont boldSystemFontOfSize:15];
         self.numberFourDescriptionLabelInDescriptionView.textColor = UIColor.whiteColor;
-        self.numberFourDescriptionLabelInDescriptionView.text = @"Im Sperrbildschirm";
+        self.numberFourDescriptionLabelInDescriptionView.text = MHNotificationLocalizedString(@"notification.lockScreen");
         [self.numberFourDescriptionView addSubview:self.numberFourDescriptionLabelInDescriptionView];
         
         [self.numberFourDescriptionLabelInDescriptionView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -306,7 +333,7 @@
         
         _numberFiveDescriptionLabel = UILabel.new;
         self.numberFiveDescriptionLabel.textColor = UIColor.whiteColor;
-        self.numberFiveDescriptionLabel.text = @"Wähle \"Banner\"";
+        self.numberFiveDescriptionLabel.text = MHNotificationLocalizedString(@"notification.chooseBanner");
         self.numberFiveDescriptionLabel.numberOfLines = 2;
         self.numberFiveDescriptionLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.numberFiveDescriptionLabel];
@@ -334,7 +361,7 @@
         
         _noneLabel = UILabel.new;
         self.noneLabel.textColor = UIColor.lightGrayColor;
-        self.noneLabel.text = @"Keine";
+        self.noneLabel.text = MHNotificationLocalizedString(@"notification.none");
         self.noneLabel.font = [UIFont boldSystemFontOfSize:15];
         self.noneLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.noneLabel];
@@ -344,14 +371,14 @@
         self.bannerLabel.clipsToBounds = YES;
         self.bannerLabel.layer.cornerRadius = 8;
         self.bannerLabel.textColor = UIColor.blackColor;
-        self.bannerLabel.text = @"Banner";
+        self.bannerLabel.text = MHNotificationLocalizedString(@"notification.banner");
         self.bannerLabel.font = [UIFont boldSystemFontOfSize:15];
         self.bannerLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.bannerLabel];
         
         _hinweisLabel = UILabel.new;
         self.hinweisLabel.textColor = UIColor.lightGrayColor;
-        self.hinweisLabel.text = @"Hinweise";
+        self.hinweisLabel.text = MHNotificationLocalizedString(@"notification.alert");
         self.hinweisLabel.font = [UIFont boldSystemFontOfSize:15];
         self.hinweisLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.hinweisLabel];

@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  MHNotification
+
+  Created by Mario Hahn on 17.02.14.
+  Copyright (c) 2014 Mario Hahn. All rights reserved.
+*/
+
+"notification.work"               = "Here's how:";
+"notification.notificationTap"    = "Tap \"Notification Center\"";
+"notification.open"               = "Open iPhone Settings";
+"notification.app"                = "Select \"%@\"";
+"notification.activate"           = "Turn on Show on Lock Screen";
+"notification.lockScreen"         = "Show on Lock Screen";
+"notification.chooseBanner"       = "Select \"Banners\"";
+"notification.banner"             = "Banners";
+"notification.none"               = "None";
+"notification.alert"              = "Alerts";
+
