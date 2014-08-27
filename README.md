@@ -28,3 +28,12 @@ notificationHelper.bannerLabel.text = NSLocalizedString(@"Banner", nil);
 
 
 ```
+##Usage
+```objective-c
+
+Localization - at the moment you have to localize it on your own ex:
+       
+notificationHelper.bannerLabel.text = NSLocalizedString(@"Banner", nil); 
+```
+
+
