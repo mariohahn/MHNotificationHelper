@@ -24,7 +24,7 @@
     
     MHNotificationHelperObject *notificationObject = [MHNotificationHelperObject objectWithTitle:title
                                                                                      description:descriptionString
-                                                                                         appIcon:nil
+                                                                                         appIcon:[[UIImage imageNamed:@"MHVideo"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
                                                                                          appName:@"meine App"];
     
     MHNotificationHelperViewController *notificationHelper = [MHNotificationHelperViewController.alloc initWithNotification:notificationObject];
