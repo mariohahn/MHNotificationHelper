@@ -38,6 +38,8 @@
 		F5F2FB4119AE22DF002A8FCC /* MHVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB3F19AE22DF002A8FCC /* MHVideo@2x.png */; };
 		F5F2FB4219AE22DF002A8FCC /* MHVideo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4019AE22DF002A8FCC /* MHVideo.png */; };
 		F5F2FB4419AE23C0002A8FCC /* MHNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */; };
+		F5F2FB4719AE352E002A8FCC /* MHNotification.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4519AE352E002A8FCC /* MHNotification.png */; };
+		F5F2FB4819AE352E002A8FCC /* MHNotification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F2FB4619AE352E002A8FCC /* MHNotification@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		F5F2FB3F19AE22DF002A8FCC /* MHVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHVideo@2x.png"; sourceTree = "<group>"; };
 		F5F2FB4019AE22DF002A8FCC /* MHVideo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHVideo.png; sourceTree = "<group>"; };
 		F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MHNotification.bundle; path = MHNotificationHelper/MHNotification.bundle; sourceTree = "<group>"; };
+		F5F2FB4519AE352E002A8FCC /* MHNotification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MHNotification.png; path = MHNotificationHelper/images/MHNotification.png; sourceTree = "<group>"; };
+		F5F2FB4619AE352E002A8FCC /* MHNotification@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MHNotification@2x.png"; path = "MHNotificationHelper/images/MHNotification@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,8 @@
 				F5F2FB4319AE23C0002A8FCC /* MHNotification.bundle */,
 				F5F2FB3719AE1D73002A8FCC /* MHExit.png */,
 				F5F2FB3819AE1D73002A8FCC /* MHExit@2x.png */,
+				F5F2FB4519AE352E002A8FCC /* MHNotification.png */,
+				F5F2FB4619AE352E002A8FCC /* MHNotification@2x.png */,
 				F5F2FB3919AE1D73002A8FCC /* MHSettings.png */,
 				F5F2FB3A19AE1D73002A8FCC /* MHSettings@2x.png */,
 				F5F2FB2419AE07BD002A8FCC /* MHNotificationHelperViewController.h */,
@@ -330,6 +336,8 @@
 				F5F2FB3E19AE1D73002A8FCC /* MHSettings@2x.png in Resources */,
 				F5F2FB3B19AE1D73002A8FCC /* MHExit.png in Resources */,
 				F5F2FAE319AE0151002A8FCC /* Images.xcassets in Resources */,
+				F5F2FB4719AE352E002A8FCC /* MHNotification.png in Resources */,
+				F5F2FB4819AE352E002A8FCC /* MHNotification@2x.png in Resources */,
 				F5F2FB3D19AE1D73002A8FCC /* MHSettings.png in Resources */,
 				F5F2FAD519AE0151002A8FCC /* InfoPlist.strings in Resources */,
 				F5F2FADE19AE0151002A8FCC /* Main.storyboard in Resources */,

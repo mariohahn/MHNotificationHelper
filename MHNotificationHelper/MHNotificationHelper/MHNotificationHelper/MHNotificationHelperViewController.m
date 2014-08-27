@@ -195,7 +195,6 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
             make.top.mas_equalTo(self.doesItWorkLabel.mas_bottom).with.offset(paddingBetweenLabels);
         }];
         
-        
         _numberTwoLabel = UILabel.new;
         self.numberTwoLabel.text = @"2.";
         [self.view addSubview:self.numberTwoLabel];
@@ -207,7 +206,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         }];
         
         _numberTwoImageView = UIImageView.new;
-        self.numberTwoImageView.image = [UIImage imageNamed:@""];
+        self.numberTwoImageView.image = [[UIImage imageNamed:@"MHNotification"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         [self.view addSubview:self.numberTwoImageView];
         
         [self.numberTwoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -297,7 +296,6 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
             make.height.mas_equalTo(35);
             make.top.mas_equalTo(self.numberFourDescriptionLabel.mas_bottom).with.offset(paddingBetweenViews);
         }];
-        
         
         _numberFourDescriptionLabelInDescriptionView = UILabel.new;
         self.numberFourDescriptionLabelInDescriptionView.font = [UIFont boldSystemFontOfSize:15];

@@ -19,17 +19,15 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    NSString *title = @"Benachrichtungen aktivieren";
-    NSString *descriptionString = @"Um die Notificationen verwenden zu können müssen sie die Banachrichtungen aktivieren.";
+    NSString *title = @"Turn on Notifications";
+    NSString *descriptionString = @"This way, you and your friends will see messages instantly on your phones.";
     
     MHNotificationHelperObject *notificationObject = [MHNotificationHelperObject objectWithTitle:title
                                                                                      description:descriptionString
                                                                                          appIcon:[[UIImage imageNamed:@"MHVideo"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]
                                                                                          appName:@"meine App"];
     
-    MHNotificationHelperViewController *notificationHelper = [MHNotificationHelperViewController.alloc initWithNotification:notificationObject];
-    notificationHelper.bannerLabel.text = NSLocalizedString(@"Banner", nil);
-    
+    MHNotificationHelperViewController *notificationHelper = [MHNotificationHelperViewController.alloc initWithNotification:notificationObject];    
     [self presentViewController:notificationHelper animated:YES completion:nil];
     
 }
