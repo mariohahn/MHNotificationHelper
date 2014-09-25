@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MHNotification
+
+  Created by Néstor Malet.
+  Copyright (c) 2014 Néstor Malet. All rights reserved.
+*/
+
+"notification.work"               = "Voici comment faire:";
+"notification.notificationTap"    = "Tapez \"Notifications\"";
+"notification.open"               = "Ouvrez Réglages iPhone";
+"notification.app"                = "Sélectionnez \"%@\"";
+"notification.activate"           = "Allumez Afficher sur l'écran verrouillé";
+"notification.lockScreen"         = "Afficher sur l'écran verrouillé";
+"notification.chooseBanner"       = "Sélectionnez \"Bannières\"";
+"notification.banner"             = "Bannières";
+"notification.none"               = "Aucune";
+"notification.alert"              = "Alertes";

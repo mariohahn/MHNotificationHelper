@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MHNotification
+
+  Created by Néstor Malet.
+  Copyright (c) 2014 Néstor Malet. All rights reserved.
+*/
+
+"notification.work"               = "Berikut caranya:";
+"notification.notificationTap"    = "Sentuh \"Pemberitahuan\"";
+"notification.open"               = "Buka Pengaturan iPhone";
+"notification.app"                = "Pilih \"%@\":";
+"notification.activate"           = "Aktifkan Lihat saat Layar Terkunci";
+"notification.lockScreen"         = "Lihat saat Layar Terkunci";
+"notification.chooseBanner"       = "Pilih \"Spanduk\"";
+"notification.banner"             = "Spanduk";
+"notification.none"               = "Tidak Ada";
+"notification.alert"              = "Peringatan";

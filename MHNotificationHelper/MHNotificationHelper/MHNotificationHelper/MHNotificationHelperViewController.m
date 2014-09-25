@@ -153,6 +153,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         _doesItWorkLabel = UILabel.new;
         self.doesItWorkLabel.textColor = UIColor.whiteColor;
         self.doesItWorkLabel.text = MHNotificationLocalizedString(@"notification.work");
+        [self.doesItWorkLabel setAdjustsFontSizeToFitWidth:YES];
         self.doesItWorkLabel.font = [UIFont boldSystemFontOfSize:15];
         [self.view addSubview:self.doesItWorkLabel];
         
@@ -301,6 +302,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         self.numberFourDescriptionLabelInDescriptionView.font = [UIFont boldSystemFontOfSize:15];
         self.numberFourDescriptionLabelInDescriptionView.textColor = UIColor.whiteColor;
         self.numberFourDescriptionLabelInDescriptionView.text = MHNotificationLocalizedString(@"notification.lockScreen");
+        [self.numberFourDescriptionLabelInDescriptionView setAdjustsFontSizeToFitWidth:YES];
         [self.numberFourDescriptionView addSubview:self.numberFourDescriptionLabelInDescriptionView];
         
         [self.numberFourDescriptionLabelInDescriptionView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -360,6 +362,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         _noneLabel = UILabel.new;
         self.noneLabel.textColor = UIColor.lightGrayColor;
         self.noneLabel.text = MHNotificationLocalizedString(@"notification.none");
+        [self.noneLabel setAdjustsFontSizeToFitWidth:YES];
         self.noneLabel.font = [UIFont boldSystemFontOfSize:15];
         self.noneLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.noneLabel];
@@ -370,6 +373,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         self.bannerLabel.layer.cornerRadius = 8;
         self.bannerLabel.textColor = UIColor.blackColor;
         self.bannerLabel.text = MHNotificationLocalizedString(@"notification.banner");
+        [self.bannerLabel setAdjustsFontSizeToFitWidth:YES];
         self.bannerLabel.font = [UIFont boldSystemFontOfSize:15];
         self.bannerLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.bannerLabel];
@@ -377,6 +381,7 @@ NSString *MHNotificationLocalizedString(NSString *localizeString) {
         _hinweisLabel = UILabel.new;
         self.hinweisLabel.textColor = UIColor.lightGrayColor;
         self.hinweisLabel.text = MHNotificationLocalizedString(@"notification.alert");
+        [self.hinweisLabel setAdjustsFontSizeToFitWidth:YES];
         self.hinweisLabel.font = [UIFont boldSystemFontOfSize:15];
         self.hinweisLabel.textAlignment = NSTextAlignmentCenter;
         [self.numberFiveDescriptionView addSubview:self.hinweisLabel];

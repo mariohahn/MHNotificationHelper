@@ -53,6 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E91188C19D0282B00A47893 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E91188D19D0282B00A47893 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E91188E19D029DB00A47893 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E91188F19D029DB00A47893 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F2D19D02DFB00C96015 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F2E19D02DFB00C96015 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F2F19D1442900C96015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3019D1442900C96015 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3119D1443200C96015 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3219D1443300C96015 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3319D1463200C96015 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3419D1463200C96015 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3519D1482600C96015 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EE32F3619D1482600C96015 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5F2FAC719AE0151002A8FCC /* MHNotificationHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHNotificationHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F2FACA19AE0151002A8FCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5F2FACC19AE0151002A8FCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -314,6 +328,13 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				de,
+				it,
+				pt,
+				id,
+				sv,
+				pl,
 			);
 			mainGroup = F5F2FABE19AE0151002A8FCC;
 			productRefGroup = F5F2FAC819AE0151002A8FCC /* Products */;
@@ -400,6 +421,13 @@
 			isa = PBXVariantGroup;
 			children = (
 				F5F2FAD419AE0151002A8FCC /* en */,
+				8E91188C19D0282B00A47893 /* es */,
+				8E91188E19D029DB00A47893 /* de */,
+				8EE32F2D19D02DFB00C96015 /* it */,
+				8EE32F2F19D1442900C96015 /* pt */,
+				8EE32F3119D1443200C96015 /* id */,
+				8EE32F3319D1463200C96015 /* sv */,
+				8EE32F3519D1482600C96015 /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -416,6 +444,13 @@
 			isa = PBXVariantGroup;
 			children = (
 				F5F2FAF319AE0151002A8FCC /* en */,
+				8E91188D19D0282B00A47893 /* es */,
+				8E91188F19D029DB00A47893 /* de */,
+				8EE32F2E19D02DFB00C96015 /* it */,
+				8EE32F3019D1442900C96015 /* pt */,
+				8EE32F3219D1443300C96015 /* id */,
+				8EE32F3419D1463200C96015 /* sv */,
+				8EE32F3619D1482600C96015 /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -578,6 +613,7 @@
 				F5F2FAFB19AE0151002A8FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5F2FAFC19AE0151002A8FCC /* Build configuration list for PBXNativeTarget "MHNotificationHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +622,7 @@
 				F5F2FAFE19AE0151002A8FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

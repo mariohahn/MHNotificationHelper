@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MHNotification
+
+  Created by Néstor Malet.
+  Copyright (c) 2014 Néstor Malet. All rights reserved.
+*/
+
+"notification.work"               = "Såhär gör du:";
+"notification.notificationTap"    = "Tryck på \"Notiser\"";
+"notification.open"               = "Öppna iPhone Inställningar";
+"notification.app"                = "Välj \"%@\":";
+"notification.activate"           = "Aktivera Visa vid låst skärm";
+"notification.lockScreen"         = "Visa vid låst skärm";
+"notification.chooseBanner"       = "Välj \"Banderoller\"";
+"notification.banner"             = "Banderoller";
+"notification.none"               = "Ingen";
+"notification.alert"              = "Notiser";

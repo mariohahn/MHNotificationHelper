@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MHNotification
+
+  Created by Néstor Malet.
+  Copyright (c) 2014 Néstor Malet. All rights reserved.
+*/
+
+"notification.work"               = "Sige estos pasos:";
+"notification.notificationTap"    = "Clica \"Centro de notificaciones\"";
+"notification.open"               = "Abre los Ajustes del dispositivo";
+"notification.app"                = "Selecciona \"%@\"";
+"notification.activate"           = "Activa Ver en la pantalla bloqueada";
+"notification.lockScreen"         = "Ver en la pantalla bloqueada";
+"notification.chooseBanner"       = "Selecciona \"Tiras\"";
+"notification.banner"             = "Tiras";
+"notification.none"               = "Nada";
+"notification.alert"              = "Alertas";
