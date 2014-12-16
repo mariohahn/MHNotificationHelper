@@ -67,6 +67,8 @@
 		8EE32F3419D1463200C96015 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EE32F3519D1482600C96015 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EE32F3619D1482600C96015 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5C47BF61A407DE800295C14 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B5C47BF71A407DE800295C14 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F5F2FAC719AE0151002A8FCC /* MHNotificationHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHNotificationHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F2FACA19AE0151002A8FCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5F2FACC19AE0151002A8FCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -335,6 +337,7 @@
 				id,
 				sv,
 				pl,
+				"zh-Hant",
 			);
 			mainGroup = F5F2FABE19AE0151002A8FCC;
 			productRefGroup = F5F2FAC819AE0151002A8FCC /* Products */;
@@ -428,6 +431,7 @@
 				8EE32F3119D1443200C96015 /* id */,
 				8EE32F3319D1463200C96015 /* sv */,
 				8EE32F3519D1482600C96015 /* pl */,
+				B5C47BF61A407DE800295C14 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -451,6 +455,7 @@
 				8EE32F3219D1443300C96015 /* id */,
 				8EE32F3419D1463200C96015 /* sv */,
 				8EE32F3619D1482600C96015 /* pl */,
+				B5C47BF71A407DE800295C14 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

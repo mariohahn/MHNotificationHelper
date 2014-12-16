@@ -1,0 +1,18 @@
+/*
+  Localizable.strings
+  MHNotificationHelper
+
+  Created by Ben on 16/12/2014.
+  Copyright (c) 2014 bcylin, Inc. All rights reserved.
+*/
+
+"notification.work"               = "步驟：";
+"notification.notificationTap"    = "點選「通知」";
+"notification.open"               = "開啟裝置設定";
+"notification.app"                = "選擇「%@」";
+"notification.activate"           = "允許通知顯示於鎖定畫面";
+"notification.lockScreen"         = "顯示於鎖定畫面";
+"notification.chooseBanner"       = "選擇「橫幅」";
+"notification.banner"             = "橫幅";
+"notification.none"               = "無";
+"notification.alert"              = "提示";
